@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="javaKod.Autor" table="autori">
+        <id column="id_autora" name="idAutora" type="int">
+            <generator class="increment"></generator>
+        </id> 
+        <property name="imeAutora" column="ime_autora" type="string" /> 
+        <property name="prezimeAutora" column="prezime_autora" type="string" /> 
+        <property name="email" column="email" type="string" /> 
+        <property name="lozinka" column="lozinka" type="string" /> 
+        <property name="JMBG" column="JMBG" type="string" /> 
+        <property name="brojTelefona" column="broj_telefona" type="string" /> 
+        <set name="radovi" inverse="true" cascade="save-update">
+            <key column="autor" not-null="false"/> 
+            <one-to-many class="javaKod.Rad"/>
+        </set>
+        <one-to-one name="zaposlenjeInfo" class="javaKod.Zaposlenje" cascade="save-update"></one-to-one>
+    
+    </class>
+    
+</hibernate-mapping>
+

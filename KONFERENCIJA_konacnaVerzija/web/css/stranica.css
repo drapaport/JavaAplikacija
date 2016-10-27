@@ -1,0 +1,325 @@
+body {  
+background-image:url("../slike/pozadina.jpg")!important;
+	background-color: #2E2E2E;
+	background-repeat:no-repeat;
+	background-attachment:fixed !important;
+	background-position:center center; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	 font: 12px/20px 'Lucida Grande', Verdana, sans-serif;
+         color: #D3D3D3;
+}
+
+h2 ,h3{text-align:center ;}
+
+	
+#page-container {
+   position: absolute;
+    left: 50%;
+    transform: translateX(-50%) ;
+
+ }
+ 
+#content {
+width: 900px;
+height: 250px;
+margin: 10px 0px 5px 0px;
+padding: 10px;
+background: #7b96cc;
+float:left;
+ }
+ 
+#header {
+ width: 1100px;
+ float: left;
+ display:inline;
+ clear:both;
+ padding: 10px;
+ border: 1px solid #ccc;
+ height:175px;
+ margin: 10px 0px 5px 0px;
+ background: #284b9a;
+}
+#header img{
+max-width:100%; /* proporcionalno skaliranje */
+	width:25%;		/* 			slike			*/
+ float:right;}
+	
+#nav , #nav ul.sub-menu {
+    margin: 5% 0 0 0;
+	padding: 0;
+	list-style: none;
+	padding-left:1%;
+	clear:both;
+}
+#nav ul.sub-menu {margin-top:0;}
+#nav ul{
+    display: none;
+	
+	}
+	
+#nav li{
+	
+	list-style-type: none;
+   	float: left; /* ako ovo obrisemo dobijamo vertikalni drop down*/
+	width:140px; /* sirina svakog polja navigacije*/
+	z-index:5;
+	text-align:center;
+}
+
+
+a{
+	text-decoration: none;
+	color:#D3D3D3;
+	}
+a:hover {
+    text-decoration: none;
+    color:white;
+   
+    
+}
+
+hr{  height: 12px; border: 0; box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5); }
+
+
+
+
+#nav li a{
+    display: block;
+	text-decoration: none;
+	color:#284b9a;
+	font-weight:bold;
+	background: #D3D3D3; /* IE6 Bug */
+	padding: 5px;
+	border: 1px solid #ccc;
+}
+#nav li ul.sub-menu {
+    display:none;
+    float:left;
+    left: 0; /* Set 1px less than menu width */
+	top: auto;
+	display: none;
+}
+#nav li ul {
+    display:none;
+	
+}
+#nav li:hover ul {
+    display:block;
+}
+#nav li ul li{
+    clear:both;
+border-style:none;}
+
+ /*submenu*/
+
+#nav li ul.sub-menu {
+    display:none;
+    float:left;
+    left: 0; /* Set 1px less than menu width */
+	top: auto;
+	display: none;
+	text-align:center;
+}
+
+#nav li:hover ul {
+    display:block;
+}
+
+#nav > li:hover > a, #nav ul li:hover a {
+    color:  #284b9a;
+	background-color: white;
+	font-style: italic;
+	font-weight: bold;
+	
+}
+	
+
+#main{
+width: 1100px;
+ 
+position:absolute;
+	z-index: -100;
+
+ clear:both;
+top:210px;
+
+ padding: 10px;
+
+ margin: 10px 0px 5px 0px;
+}
+
+ #main-content{
+	background:#284b9a;
+	width:700px;
+	 height: 1490px;
+	
+	/*opacity for IE5+*/
+	filter: alpha(opacity=85);
+	/*opacity for older Mozilla browsers*/
+  -moz-opacity: 0.7;
+  /*opacity for mozilla/safari*/
+  opacity: 0.85;
+  color: whitesmoke;
+  border: groove white 10px;
+  z-index:-1;
+  float:left;
+  margin: 0px 0px 5px 0px;
+   padding: 10px;
+  }
+  #main-content p, .pred , h4 { text-align:justify;
+ padding: 0px 20px 0px 20px; }
+  
+
+
+ #main-content form, #main-content h3{
+ padding-bottom:35px;}
+
+#organizatori{
+	background:#284b9a;
+	
+	margin-right:5%;
+	
+	
+	/*opacity for IE5+*/
+  filter: alpha(opacity=85);
+  /*opacity for older Mozilla browsers*/
+  -moz-opacity: 0.7;
+  /*opacity for mozilla/safari*/
+  opacity: 0.85;
+  color: #D3D3D3;
+  border: groove white 10px;
+  list-style:none;
+  text-align:center;
+  margin: 0px 0px 5px 0px;
+   padding: 50px 10px 10px 10px;
+
+ width: 281px;
+ height: 1450px;
+float:right;
+}
+#organizatori h3{padding-bottom:30px;}
+
+#reg ul{
+	float:top;
+	margin-left: 830px;}
+#reg li{ list-style-type: none;
+   		text-align:center;
+	width:140px; /* sirina svakog polja navigacije*/
+}
+#reg li a{
+    display: block;
+	text-decoration: none;
+	
+	background: #D3D3D3; /* IE6 Bug */
+	padding: 5px;
+	border: 1px solid #ccc;
+	color:#284b9a;
+	font-weight:bold;
+}
+#reg  ul > li:hover > a {
+    color:  #284b9a;
+	background-color: white;
+	font-style: italic;
+	font-weight: bold;
+	
+}
+#reg ul li:hover a {
+
+    background: white;
+	
+}
+
+#formulari{
+    
+ position: absolute;
+ left: 29%; 
+transform: translateX(-30%) ;
+
+top:15%;
+
+}
+
+input {border:1px solid #CCC;
+	border-radius: 5px;
+	margin:0 0 5px;
+	padding:10px;
+	width:280px;
+	
+	}
+textarea{
+	width:290px;
+    margin-bottom:5px;
+    line-height:18px;
+    padding:2px 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border:1px solid #CCC;
+	display:block;
+       
+}
+textarea { resize:vertical; }
+
+input:hover{ 
+
+	color:#111;
+	
+  }
+textarea:hover{
+color:#111;}
+
+
+.dugme{width:110px;
+margin-right:3%;
+
+border-radius: 10px; 
+border:1px groove #CCC;
+}
+
+.padmenu{padding-left:5%;
+padding-bottom:10%; padding-top:10%;}
+select{
+	border:1px solid #CCC;
+	margin-bottom:5px;
+	border-radius:5px;
+	width:160px;
+	position:absolute;
+	z-index:999;
+	left:40%;
+	text-align:center;}
+
+.polja {text-align:center;
+	padding-bottom:2%;}
+label,textarea{
+  
+display:inline-block; vertical-align:middle;
+
+}
+
+#slike-naslovna{
+position:absolute;
+top:650px;
+right:360px;}
+#slike-naslovna img {
+	max-width:100%; /* proporcionalno skaliranje */
+	width:50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+margin-top: 5%;	}
+
+.pred li { padding-bottom: 10px;}
+
+.image1 {
+     display: block;
+    margin: 0 auto;
+    height: 180px;
+    width: 150px;
+    padding-bottom: 60px;
+	position:relative;
+	
+}
+
